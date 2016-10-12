@@ -1,0 +1,283 @@
+fileFormatVersion: 2
+guid: 1a1d64649b8d5434ab647fba2f4d1bd9
+timeCreated: 1476283065
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: piece-0-0
+    21300002: piece-0-1
+    21300004: piece-0-2
+    21300006: piece-0-3
+    21300008: piece-1-0
+    21300010: piece-1-1
+    21300012: piece-1-2
+    21300014: piece-1-3
+    21300016: piece-2-0
+    21300018: piece-2-1
+    21300020: piece-2-2
+    21300022: piece-2-3
+    21300024: piece-3-0
+    21300026: piece-3-1
+    21300028: piece-3-2
+    21300030: piece-3-3
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 79
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: piece-0-0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 568
+        width: 320
+        height: 182
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: piece-0-1
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 568
+        width: 320
+        height: 182
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: piece-0-2
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 568
+        width: 320
+        height: 182
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: piece-0-3
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 568
+        width: 320
+        height: 182
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: piece-1-0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 386
+        width: 320
+        height: 182
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: piece-1-1
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 386
+        width: 320
+        height: 182
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: piece-1-2
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 386
+        width: 320
+        height: 182
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: piece-1-3
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 386
+        width: 320
+        height: 182
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: piece-2-0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 204
+        width: 320
+        height: 182
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: piece-2-1
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 204
+        width: 320
+        height: 182
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: piece-2-2
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 204
+        width: 320
+        height: 182
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: piece-2-3
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 204
+        width: 320
+        height: 182
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: piece-3-0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 22
+        width: 320
+        height: 182
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: piece-3-1
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 22
+        width: 320
+        height: 182
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: piece-3-2
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 22
+        width: 320
+        height: 182
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: piece-3-3
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 22
+        width: 320
+        height: 182
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
