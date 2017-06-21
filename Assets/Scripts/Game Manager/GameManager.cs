@@ -224,7 +224,7 @@ public class GameManager : MonoBehaviour {
 	}
 
 	private Vector3 GetScreenCoordinatesFromViewPort (int row, int column) {
-		Vector3 point = Camera.main.ViewportToWorldPoint (new Vector3 (0.2275f * row, 1 - 0.22875f * column, 0));
+		Vector3 point = Camera.main.ViewportToWorldPoint (new Vector3 (0.2225f * row, 1 - 0.22575f * column, 0));
 		point.z = 0;
 		return point;
 	}
