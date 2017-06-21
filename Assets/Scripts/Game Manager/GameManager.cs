@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections;
 
 public class GameManager : MonoBehaviour {
@@ -29,7 +30,7 @@ public class GameManager : MonoBehaviour {
 	}
 	
 	void Update () {
-		if (Application.loadedLevelName == "Game") {
+		if (SceneManager.GetActiveScene ().name == "Game") {
 			switch (gameState) {
 			case GameState.Playing:
 				CheckInput ();
@@ -47,15 +48,23 @@ public class GameManager : MonoBehaviour {
 		}
 	}
 
-	void OnLevelWasLoaded () {
-		if (Application.loadedLevelName == "Game") {
+	void OnEnable () {
+		SceneManager.sceneLoaded += CheckLevelName;
+	}
+
+	void OnDisable () {
+		SceneManager.sceneLoaded -= CheckLevelName;
+	}
+
+	void CheckLevelName (Scene scene, LoadSceneMode mode) {
+		if (SceneManager.GetActiveScene ().name == "Game") {
 			if (puzzleIndex > 0) {
 				LoadPuzzle ();
 				GameStarted ();
 			}
 		}
 
-		if (Application.loadedLevelName != "Game") {
+		if (SceneManager.GetActiveScene ().name != "Game") {
 			if (puzzleIndex != -1)
 				puzzleIndex = -1;
 
@@ -215,7 +224,7 @@ public class GameManager : MonoBehaviour {
 	}
 
 	private Vector3 GetScreenCoordinatesFromViewPort (int row, int column) {
-		Vector3 point = Camera.main.ViewportToWorldPoint (new Vector3 (0.225f * row, 1 - 0.225f * column, 0));
+		Vector3 point = Camera.main.ViewportToWorldPoint (new Vector3 (0.2275f * row, 1 - 0.22875f * column, 0));
 		point.z = 0;
 		return point;
 	}
