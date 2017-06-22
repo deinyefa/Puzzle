@@ -193,6 +193,10 @@ public class GameManager : MonoBehaviour {
 	}
 
 	private void AnimateMovement (PuzzlePiece toMove, float time) {
+		//- Play Sound
+		MusicPlayer.instance.GetComponent<AudioSource>().clip = MusicPlayer.instance.pieceMoved;
+
+		//- Move Piece
 		toMove.GameObject.transform.position = Vector2.MoveTowards (toMove.GameObject.transform.position,
 			screenPositionToAnimate, animSpeed * time);
 	}
@@ -220,6 +224,7 @@ public class GameManager : MonoBehaviour {
 				}
 			}
 		}
+		//TODO: set particle system
 		gameState = GameState.End;
 	}
 
