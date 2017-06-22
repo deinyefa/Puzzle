@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ToggleSprite : MonoBehaviour {
 
@@ -15,6 +16,8 @@ public class ToggleSprite : MonoBehaviour {
 	}
 	
 	public void ToggleSoundSetting () {
+		if (SceneManager.GetActiveScene ().name != "MainMenu")
+			MusicPlayer.instance.ToggleSound ();
 		if (image.sprite == sound)
 			image.sprite = noSound;
 		else if (image.sprite == noSound)

@@ -9,7 +9,6 @@ public class MusicPlayer : MonoBehaviour {
 	private AudioSource music;
 
 	public AudioClip backgroundMusic;
-	public AudioClip pieceMoved;
 
 	void Awake () {
 		if (instance != null) {

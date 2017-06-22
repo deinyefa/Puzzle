@@ -194,7 +194,8 @@ public class GameManager : MonoBehaviour {
 
 	private void AnimateMovement (PuzzlePiece toMove, float time) {
 		//- Play Sound
-		MusicPlayer.instance.GetComponent<AudioSource>().clip = MusicPlayer.instance.pieceMoved;
+		LevelMusic levelMusic = GameObject.FindObjectOfType<LevelMusic> ();
+		levelMusic.audioSource.clip = levelMusic.pieceMoved;
 
 		//- Move Piece
 		toMove.GameObject.transform.position = Vector2.MoveTowards (toMove.GameObject.transform.position,
