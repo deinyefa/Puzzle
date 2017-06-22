@@ -13,7 +13,7 @@ public class MusicPlayer : MonoBehaviour {
 
 	void Awake () {
 		if (instance != null) {
-			Destroy (gameObject);
+			Destroy (this.gameObject);
 			print ("Duplicate music player self-destructing"); 
 		} else {
 			instance = this;
@@ -25,7 +25,16 @@ public class MusicPlayer : MonoBehaviour {
 		}
 	}
 
-	//- toggles sound to go in and off
+	void Update() {
+		music.clip = backgroundMusic;
+		if (music.clip == backgroundMusic)
+			music.loop = true;
+		else {
+			music.loop = false;
+		}
+	}
+
+	//- toggles sound to go on and off
 	public void ToggleSound () {
 		if (music.isPlaying) {
 			music.Pause ();
