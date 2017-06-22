@@ -24,4 +24,13 @@ public class MusicPlayer : MonoBehaviour {
 			music.Play ();
 		}
 	}
+
+	//- toggles sound to go in and off
+	public void ToggleSound () {
+		if (music.isPlaying) {
+			music.Pause ();
+		} else if (!music.isPlaying){
+			music.UnPause ();
+		}
+	}
 }
