@@ -21,8 +21,13 @@ public class GameManager : MonoBehaviour {
 
 	private GameState gameState;
 
+	private WinScript winScript;
+
+
 	void Awake () {
 		MakeSingleton ();
+
+		winScript = GameObject.FindObjectOfType<WinScript> ();
 	}
 
 	void Start () {
@@ -42,6 +47,7 @@ public class GameManager : MonoBehaviour {
 				break;
 
 			case GameState.End:
+				winScript.PuzzleComplete ();
 				Debug.Log ("Game Over!");
 				break;
 			}
