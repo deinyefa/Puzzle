@@ -7,5 +7,8 @@ public class Restart : MonoBehaviour {
 
 	public void LoadNewScene () {
 		SceneManager.LoadScene ("MainMenu");
+
+		if (!MusicPlayer.instance.music.isPlaying)
+			MusicPlayer.instance.music.Play ();
 	}
 }
