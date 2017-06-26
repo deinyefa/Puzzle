@@ -236,9 +236,29 @@ public class GameManager : MonoBehaviour {
 	}
 
 	private Vector3 GetScreenCoordinatesFromViewPort (int row, int column) {
-		Vector3 point = Camera.main.ViewportToWorldPoint (new Vector3 (0.2225f * row, 1 - 0.22575f * column, 0));
-		point.z = 0;
-		return point;
+		#if UNITY_IPHONE
+
+		if (Camera.main.aspect >= 1.7f) 
+		{
+			//- 16:9
+			Vector3 point = Camera.main.ViewportToWorldPoint (new Vector3 (0.2225f * row, 1 - 0.22575f * column, 0));
+			point.z = 0;
+			return point;
+		} 
+		else
+		{
+			//- Camera.main.aspect >= 1.5 -> 3:2
+			Vector3 point = Camera.main.ViewportToWorldPoint (new Vector3 (0.265f * row, 1 - 0.22575f * column, 0));
+			point.z = 0;
+			return point;
+		}
+		#endif
+
+		#if UNITY_ANDROID
+			Vector3 point = Camera.main.ViewportToWorldPoint (new Vector3 (0.24785f * row, 1 - 0.22575f * column, 0));
+			point.z = 0;
+			return point;
+		#endif
 	}
 
 	void LoadPuzzle () {
