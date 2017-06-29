@@ -6,7 +6,7 @@ public class WinScript : MonoBehaviour {
 
 	public GameObject panel;
 
-	private Timer timerScript;
+	public Timer timerScript;
 
 	void Awake () {
 		timerScript = GameObject.FindObjectOfType<Timer> ();
@@ -15,9 +15,7 @@ public class WinScript : MonoBehaviour {
 	}
 
 	public void PuzzleComplete () {
-		if (!panel.activeInHierarchy) {
-			panel.SetActive (true);
-		}
+		panel.SetActive (true);
 		timerScript.scoreText.text = timerScript.FinalScore ().ToString ();
 	}
 }
